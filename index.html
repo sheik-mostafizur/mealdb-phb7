@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MealDB API Practice | phb7</title>
+
+  <!-- bootstrap5 css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <style>
+    .banner {
+      padding: 140px 0;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/images/banner_1.png");
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <!-- navbar area start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container py-3">
+        <a class="navbar-brand fw-bold fs-1" href="#">Tasty HUT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <div class="d-flex">
+            <button class="btn btn-warning fw-bold">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar area end -->
+
+    <!-- banner area start -->
+    <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 mx-auto text-white text-center">
+            <h1 class="display-2 fw-bold">Taste Our Delicious <br>Best Foods</h1>
+            <p class="my-5">There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration
+              in some form, by injected humou.</p>
+            <div class="input-group mb-3 input-group-lg">
+              <input id="search_food_items" type="text" class="form-control" placeholder="Search any food"
+                aria-label="Recipient's search" aria-describedby="search">
+              <button id="search_food_btn" class="btn btn-warning" type="button" id="search">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner area end -->
+  </header>
+
+
+  <main>
+    <!-- start items -->
+    <section class="container">
+      <div id="food_items" class="row py-5"></div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <button id="show_all_items" class="btn btn-warning btn-lg fw-bold mt-5">Show All</button>
+        </div>
+      </div>
+    </section>
+    <!-- end items -->
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-2">
+          <h3 class="fw-bold mb-3">Section</h3>
+          <p>Home</p>
+          <p>Features</p>
+          <p>Pricing</p>
+          <p>FAQs</p>
+          <p>About</p>
+        </div>
+        <div class="col-3">
+          <h3 class="fw-bold mb-3">Section</h3>
+          <p>UIUX Design</p>
+          <p>Product Design</p>
+          <p>Back End Developer</p>
+          <p>Front End Developer</p>
+        </div>
+        <div class="col-3">
+          <h3 class="fw-bold mb-3">Resource</h3>
+          <p>FAQ</p>
+          <p>Support</p>
+          <p>Privacy Policy</p>
+          <p>Terms of Service</p>
+        </div>
+        <div class="col-4">
+          <h3 class="fw-bold mb-3">Subscribe to our newsletter</h3>
+          <p>There are many variations of passages of available, but the majority have suffered</p>
+          <form class="d-flex" role="email">
+            <input class="form-control me-2" type="email" placeholder="Email address" aria-label="email">
+            <button class="btn btn-warning" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap5 js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- custom js -->
+  <script src="./assets/js/createItem.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
