@@ -29,13 +29,17 @@ function showFoodItems(data) {
 
   // show all items
   const show_all_itemsBtn = document.getElementById("show_all_items");
-  show_all_itemsBtn.addEventListener("click", function () {
+  show_all_itemsBtn.addEventListener("click", () => {
     food_items.innerHTML = "";
     for (const singleData of data) {
       // createItem is appending
       food_items.appendChild(createItem(singleData));
     }
+    show_all_itemsBtn.setAttribute("disabled", "disabled");
   });
+  if (data.length <= 6) {
+    show_all_itemsBtn.setAttribute("disabled", "disabled");
+  }
 }
 
 // get value from banner input search any food category
@@ -45,6 +49,7 @@ function searchFood() {
   search_food_btn.addEventListener("click", function () {
     const searchData = search_food_items.value;
     foodData(searchData.toLowerCase());
+    document.getElementById("show_all_items").removeAttribute("disabled");
   });
 }
 searchFood();
